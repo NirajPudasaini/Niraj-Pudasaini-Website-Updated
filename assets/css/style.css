@@ -26,6 +26,7 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -150,6 +151,9 @@ h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Desktop Navigation */
+
+
+
 .nav-menu {
   padding: 30px 0 0 0;
 }
@@ -180,7 +184,7 @@ h6 {
 .nav-menu a:focus i {
   font-size: 24px;
   padding-right: 8px;
-  color: #6f7180;
+  color: #2737af;
 }
 
 .nav-menu a:hover,
@@ -253,6 +257,7 @@ h6 {
   position: relative;
   z-index: 2;
   min-width: 300px;
+  margin-right: 350px; 
 }
 
 #hero h1 {
@@ -879,7 +884,7 @@ section {
   justify-content: center;
   align-items: center;
   border-radius: 50px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .contact .info h4 {
@@ -916,7 +921,7 @@ section {
   text-align: center;
   width: 36px;
   height: 36px;
-  transition: 0.3s;
+  transition: 0.s;
   margin-right: 10px;
 }
 
