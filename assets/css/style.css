@@ -2,6 +2,45 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+.button-container {
+  position: absolute; /* Adjust depending on your layout needs */
+  top: 50%; /* Adjust based on design preference */
+  right: 10%; /* Positions it towards the right */
+  transform: translate(-50%, -50%);
+  z-index: 100; /* Ensures it's above other content */
+}
+
+.danger-button {
+  background-color: rgb(49, 70, 163);
+  color: white;
+  border: none;
+  border-radius: 50%; /* Circular shape */
+  width: 4cm; /* Button size */
+  height: 4cm; /* Button size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 18px; /* Font size for text inside the button */
+}
+
+#fading-image {
+  position: absolute;
+  top: 40%;  
+  right: 18%; /* Match the button's position */
+  transform: translate(-50%, -50%);
+  border-radius: 50%; 
+  width: 4cm;  
+  height: 4cm;  
+  opacity: 0;  
+  transition: opacity 0.5s linear; 
+  z-index: 9; 
+  object-fit: cover;
+  display: none;
+}
+
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
@@ -64,7 +103,6 @@ body {
   font-size: 16px;
   font-weight: bold;
 }
-
 
 
 

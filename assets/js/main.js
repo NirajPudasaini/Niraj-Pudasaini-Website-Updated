@@ -5,6 +5,32 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
+function showImage() {
+  const image = document.getElementById('fading-image');
+  const button = document.querySelector('.danger-button');
+
+  // Fade out the button
+  button.style.opacity = 0;
+
+  setTimeout(() => {
+      button.style.display = 'none'; // Hide the button
+      image.style.display = 'block'; // Show the image
+      image.style.opacity = 1; // Fade in the image
+  }, 500); // Match the CSS transition time
+
+  // Optionally hide the image after some time
+  setTimeout(() => {
+      image.style.opacity = 0; // Fade out the image
+      setTimeout(() => {
+          image.style.display = 'none';
+          button.style.display = 'flex';
+          button.style.opacity = 1;
+      }, 500); // Wait for fade out to complete
+  }, 42000); // Display image for 42 seconds
+}
+
+
 (function() {
   "use strict";
 
